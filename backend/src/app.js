@@ -15,7 +15,12 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 const corsOrigin = process.env.CORS_ORIGIN || "*";
-app.use(cors({ origin: corsOrigin }));
+const allowedOrigins = corsOrigin === "*" ? "*" : corsOrigin.split(",").map((o) => o.trim());
+app.use(
+  cors({
+    origin: allowedOrigins === "*" ? "*" : allowedOrigins,
+  })
+);
 
 const limiter = rateLimit({
   windowMs: 15 * 60 * 1000, // 15 minutos
