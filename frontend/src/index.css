@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-marfil text-tinta font-body antialiased;
+  }
+  h1, h2, h3, h4 {
+    @apply font-display font-semibold;
+  }
+  :focus-visible {
+    outline: 2px solid #8C6C26;
+    outline-offset: 3px;
+  }
+}
+
+@layer components {
+  .campo {
+    @apply w-full rounded-md border border-tinta/20 bg-marfil-soft px-3.5 py-2.5 text-[15px] text-tinta placeholder:text-tinta/40 focus:border-vino focus:outline-none transition-colors;
+  }
+}
+
+@layer utilities {
+  .container-page {
+    @apply max-w-6xl mx-auto px-6 sm:px-8;
+  }
+  .eyebrow {
+    @apply text-[13px] tracking-widish text-dorado-dark font-medium;
+  }
+  .hairline {
+    @apply border-t border-tinta/10;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
