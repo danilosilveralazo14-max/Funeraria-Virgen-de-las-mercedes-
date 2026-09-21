@@ -4,7 +4,7 @@ module.exports = {
   telefono: "+51 948 600 608",
   telefonoLink: "+51948600608",
   whatsapp: "51948600608",
-  direccion: "Av. 9 de Diciembre 405, Andrés Avelino Cáceres Dorregaray, Lima, Perú",
+  direccion: "Av. 9 de Diciembre 405, Andrés Avelino Cáceres Dorregaray, Ayacucho, Perú",
   distrito: "Andrés Avelino Cáceres Dorregaray",
   email: "contacto@funerariavirgendelasmercedes.pe",
   horario: "Atención las 24 horas, los 7 días de la semana",

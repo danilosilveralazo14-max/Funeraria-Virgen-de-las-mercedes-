@@ -6,7 +6,7 @@ export const negocio = {
   whatsapp: "51948600608",
   direccion: "Av. 9 de Diciembre 405",
   distrito: "Andrés Avelino Cáceres Dorregaray",
-  ciudad: "Lima, Perú",
+  ciudad: "Ayacucho, Perú",
   horario: "Atención las 24 horas, los 7 días de la semana",
 };
 
